@@ -7,4 +7,6 @@ chmod +x ./Orchis-theme/install.sh
 sudo cp -fv ~/.themes/Orchis-Root-Red-Dark-Compact* /root/.themes/
 ./Orchis-theme/install.sh -i debian -s compact -c dark --tweaks dracula -l
 rm -rfv /var/tmp/Orchis-theme
+
+## stupid dumb fix for libadwaita
 sudo cat "GTK_THEME=Orchis-Dark-Compact-Dracula:dark" >> /etc/environment
