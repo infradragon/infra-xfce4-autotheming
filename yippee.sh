@@ -10,3 +10,7 @@ rm -rfv /var/tmp/Orchis-theme
 
 ## stupid dumb fix for libadwaita
 sudo cat "GTK_THEME=Orchis-Dark-Compact-Dracula:dark" >> /etc/environment
+
+## stupid dumb fix for flatpak
+sudo flatpak override --filesystem=xdg-config/gtk-3.0
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
